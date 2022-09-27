@@ -1,0 +1,11 @@
+DATASET_ID = "mlqa"
+SUBSET_ID = "mlqa.en.hi"
+TRAIN_DATA_PATH = "artifacts/data/train.csv"
+TEST_DATA_PATH = "artifacts/data/test.csv"
+VALID_DATA_PATH = "artifacts/data/valid.csv"
+MODEL_CKPT = "google/mt5-base"
+QUESTION_MAX_LEN = 512
+ANSWER_MAX_LEN = 64
+BATCH_SIZE = 2
+MODEL_OUT = "Vasanth/mlqa-model"
+NUM_EPOCHS = 5
