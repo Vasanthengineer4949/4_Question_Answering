@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print("Data CSV Created")
 
     multiqadataloader = MultiQADataLoader()
-    multiqadataloader.setup(stage="train")
+    multiqadataloader.setup(stage="fit")
 
     torch.cuda.empty_cache()
     gc.collect()

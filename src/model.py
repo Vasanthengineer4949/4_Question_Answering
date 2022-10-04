@@ -11,7 +11,7 @@ class Model(LightningModule):
         super().__init__()
         torch.cuda.empty_cache()
         gc.collect()
-        self.model = MT5ForConditionalGeneration.from_pretrained(config.MODEL_CKPT)
+        self.model = MT5ForConditionalGeneration.from_pretrained(config.MODEL_CKPT, return_dict=True)
         torch.cuda.empty_cache()
         gc.collect()
 
